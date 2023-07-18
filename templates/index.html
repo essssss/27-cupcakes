@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cupcakes</title>
+    </head>
+    <body>
+        <h1>Cupcakes API</h1>
+        <ul id="cupcake-list"></ul>
+
+        <form id="new-cupcake-form" method="post" action="/api/cupcakes">
+            <label for="flavor">flavor</label><br />
+            <input name="flavor" id="flavor" type="text" for="flavor" /><br />
+            <label for="size">size</label><br />
+            <input name="size" id="size" type="text" for="size" /><br />
+
+            <label for="rating">rating</label><br />
+            <input name="rating" id="rating" type="text" for="rating" /><br />
+
+            <label for="image">image</label><br />
+            <input
+                name="image"
+                id="image"
+                type="text"
+                for="image"
+            /><br /><br />
+            <button type="submit">Submit</button>
+        </form>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+            integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="static/app.js"></script>
+    </body>
+</html>
